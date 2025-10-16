@@ -48,14 +48,14 @@
 
       <div class="main-columns">
         <div class="left-column">
-          <h2>Goals</h2>
+          <h3>Goals</h3>
           <ul class="goals">
             {{range .Goals}}
             <li class="goals">{{.}}</li>
             {{end}}
           </ul>
 
-          <h2>Programming Skills</h2>
+          <h3>Programming Skills</h3>
           {{range .ProgrammingSkills}} {{if .Show}}
           <div class="entry skill-row">
             <div class="skill-name">{{.Name}}:</div>
@@ -76,7 +76,7 @@
             </span>
           </div>
 
-          <h2>Languages</h2>
+          <h3>Languages</h3>
           {{range .Languages}}
           <div class="entry skill-row">
             <div class="skill-name">{{.Name}}:</div>
@@ -84,16 +84,23 @@
           </div>
           {{end}}
 
-          <h2>Interests</h2>
+          <h3>Interests</h3>
           <ul class="interests">
             {{range .Interests}}
             <li class="interest-badge">{{.}}</li>
             {{end}}
           </ul>
-        </div>
+          <hr />
 
+          <div class="footer">
+            Generated with
+            <a href="https://github.com/StandUp2001/CV_generator">
+              https://github.com/StandUp2001/CV_generator
+            </a>
+          </div>
+        </div>
         <div class="right-column">
-          <h2>Education</h2>
+          <h3>Education</h3>
           {{range .Educations}}
           <div class="entry">
             <strong>
@@ -107,7 +114,7 @@
           </div>
           {{end}}
 
-          <h2>Jobs</h2>
+          <h3>Jobs</h3>
           {{range .Jobs}}
           <div class="entry">
             <strong>
@@ -119,7 +126,7 @@
           </div>
           {{end}}
 
-          <h2>Internships</h2>
+          <h3>Internships</h3>
           {{range .Internships}}
           <div class="entry">
             <strong>
@@ -132,15 +139,6 @@
           {{end}}
         </div>
       </div>
-
-      <hr />
-
-      <footer>
-        Generated with
-        <a href="https://github.com/StandUp2001/CV_generator">
-          https://github.com/StandUp2001/CV_generator </a
-        >.
-      </footer>
     </div>
   </body>
 </html>
