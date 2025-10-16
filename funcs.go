@@ -23,7 +23,6 @@ func init_() {
 
 	// Copy static files
 	copy_file("style.css")
-	copy_file("profile.png")
 	copy_file("profile.jpeg")
 }
 
