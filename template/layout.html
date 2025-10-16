@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{.Name}} - CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-section">
+        <div class="top-left">
+          <img src="{{.Picture}}" alt="Profile" />
+        </div>
+
+        <div class="top-right">
+          <div class="top-name">
+            <h1>{{.Name}}</h1>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-left">
+              <p><strong>Born:</strong> {{.Born}}</p>
+              <p><strong>Email:</strong> {{.Contact.Email}}</p>
+              <p><strong>Phone:</strong> {{.Contact.Phone}}</p>
+              <div class="socials">
+                {{range .Socials}}
+                <p>
+                  <strong>{{.Platform}}:</strong>
+                  <a href="{{.URL}}">{{.URL}}</a>
+                </p>
+                {{end}}
+              </div>
+            </div>
+
+            <div class="info-right">
+              <p>
+                <strong>Address:</strong><br />
+                {{.Address.Street}}<br />
+                {{.Address.PostalCode}} {{.Address.City}}<br />
+                {{.Address.Country}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="main-columns">
+        <div class="left-column">
+          <h2>Goals</h2>
+          <ul class="goals">
+            {{range .Goals}}
+            <li class="goals">{{.}}</li>
+            {{end}}
+          </ul>
+
+          <h2>Programming Skills</h2>
+          {{range .ProgrammingSkills}} {{if .Show}}
+          <div class="entry skill-row">
+            <div class="skill-name">{{.Name}}:</div>
+            <div class="dots">{{dots .Balls}}</div>
+            {{if .Using}}
+            <span class="small">✓</span>
+            {{end}} {{if .Learning}}
+            <span class="small">★</span>
+            {{end}}
+          </div>
+          {{end}} {{end}}
+
+          <div>
+            <span class="small">✓: Using this skill regularly</span>
+            <br />
+            <span class="small">
+              ★: Trying to learn and improve this skill
+            </span>
+          </div>
+
+          <h2>Languages</h2>
+          {{range .Languages}}
+          <div class="entry skill-row">
+            <div class="skill-name">{{.Name}}:</div>
+            <div class="dots">{{dots .Balls}}</div>
+          </div>
+          {{end}}
+
+          <h2>Interests</h2>
+          <ul class="interests">
+            {{range .Interests}}
+            <li class="interest-badge">{{.}}</li>
+            {{end}}
+          </ul>
+        </div>
+
+        <div class="right-column">
+          <h2>Education</h2>
+          {{range .Educations}}
+          <div class="entry">
+            <strong>
+              {{.Start}} - {{if .End}}{{.End}}{{else}}Present{{end}}
+              <span class="small">({{.Niveau}})</span>
+              <span class="small">{{if .Finished}}Diploma{{end}} </span>
+            </strong>
+            <br />
+            {{if .Degree}}{{.Degree}}<br />{{end}}
+            <span class="small">{{.Institution}}, {{.Place}}</span><br />
+          </div>
+          {{end}}
+
+          <h2>Jobs</h2>
+          {{range .Jobs}}
+          <div class="entry">
+            <strong>
+              {{.Start}} - {{if .End}}{{.End}}{{else}}Present{{end}}
+            </strong>
+            <br />
+            {{.Role}}<br />
+            <span class="small">{{.Company}}, {{.Place}}</span><br />
+          </div>
+          {{end}}
+
+          <h2>Internships</h2>
+          {{range .Internships}}
+          <div class="entry">
+            <strong>
+              {{.Start}} - {{if .End}}{{.End}}{{else}}Present{{end}}
+            </strong>
+            <br />
+            {{.Role}}<br />
+            <span class="small">{{.Company}}, {{.Place}}</span><br />
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

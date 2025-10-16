@@ -1,0 +1,205 @@
+{
+  "Name": "Stan van Dijk",
+  "Picture": "./profile.jpeg",
+  "Born": "23 May 2001",
+  "Goals": [
+    "Create efficient and high-performance code",
+    "Specialize in low-level programming",
+    "Continuously expand knowledge through learning and innovation"
+  ],
+  "Address": {
+    "Street": "Houttuinen-oost 46",
+    "PostalCode": "7325SX",
+    "City": "Apeldoorn",
+    "Country": "The Netherlands"
+  },
+  "Contact": {
+    "Email": "stanvandijk2001@gmail.com",
+    "Phone": "+31 6 25289577"
+  },
+  "Socials": [
+    {
+      "Platform": "GitHub",
+      "Url": "https://github.com/StandUp2001"
+    }
+  ],
+  "Interests": [
+    "Programming",
+    "Puzzle-(books)",
+    "Ball sports: volleyball, paddle",
+    "Driving"
+  ],
+  "ProgrammingSkills": [
+    {
+      "Name": "Rust",
+      "Balls": 4,
+      "Learning": false,
+      "Using": true,
+      "Show": true
+    },
+    {
+      "Name": "JS/TS",
+      "Balls": 3,
+      "Learning": false,
+      "Using": true,
+      "Show": true
+    },
+    {
+      "Name": "Python",
+      "Balls": 4,
+      "Learning": false,
+      "Using": true,
+      "Show": true
+    },
+    {
+      "Name": "Java/Android",
+      "Balls": 2,
+      "Learning": false,
+      "Using": false,
+      "Show": true
+    },
+    {
+      "Name": "C#",
+      "Balls": 2,
+      "Learning": true,
+      "Using": false,
+      "Show": true
+    },
+    {
+      "Name": "HTML/CSS",
+      "Balls": 2,
+      "Learning": false,
+      "Using": true,
+      "Show": true
+    },
+    {
+      "Name": "COBOL",
+      "Balls": 0,
+      "Learning": true,
+      "Using": false,
+      "Show": false
+    },
+    {
+      "Name": "C",
+      "Balls": 1,
+      "Learning": true,
+      "Using": false,
+      "Show": true
+    },
+    {
+      "Name": "SQL",
+      "Balls": 2,
+      "Learning": false,
+      "Using": false,
+      "Show": true
+    }
+  ],
+  "Languages": [
+    {
+      "Name": "Dutch",
+      "Balls": 4
+    },
+    {
+      "Name": "English",
+      "Balls": 3
+    }
+  ],
+  "Educations": [
+    {
+      "Start": "09/2022",
+      "End": "10/2025",
+      "Institution": "Saxion",
+      "Place": "Enschede",
+      "Degree": "Software Development",
+      "Niveau": "HBO",
+      "Finished": false
+    },
+    {
+      "Start": "02/2020",
+      "End": "07/2022",
+      "Institution": "ROC Aventus",
+      "Place": "Apeldoorn",
+      "Degree": "Applicatie- & Media Ontwikkelaar",
+      "Niveau": "MBO",
+      "Finished": true
+    },
+    {
+      "Start": "09/2017",
+      "End": "01/2020",
+      "Institution": "ROC Aventus",
+      "Place": "Apeldoorn",
+      "Degree": "Bouwkunde",
+      "Niveau": "MBO",
+      "Finished": false
+    },
+    {
+      "Start": "09/2013",
+      "End": "06/2017",
+      "Institution": "Heemgaard",
+      "Place": "Apeldoorn",
+      "Degree": "",
+      "Niveau": "VMBO-TL",
+      "Finished": true
+    }
+  ],
+  "Jobs": [
+    {
+      "Start": "05/2022",
+      "End": "05/2023",
+      "Company": "RYSST",
+      "Place": "Zwolle",
+      "Role": "Junior Software Developer"
+    },
+    {
+      "Start": "08/2019",
+      "End": "12/2021",
+      "Company": "Gelre Ziekenhuis",
+      "Place": "Apeldoorn",
+      "Role": "Logistiek Medewerker"
+    },
+    {
+      "Start": "09/2017",
+      "End": "08/2019",
+      "Company": "Dirk van den Broek",
+      "Place": "Apeldoorn",
+      "Role": "Kassamedewerker"
+    },
+    {
+      "Start": "04/2017",
+      "End": "08/2017",
+      "Company": "Julianatoren",
+      "Place": "Apeldoorn",
+      "Role": "Attractiemedewerker"
+    }
+  ],
+  "Internships": [
+    {
+      "Start": "07/2024",
+      "End": "09/2024",
+      "Company": "Belastingdienst",
+      "Place": "Apeldoorn",
+      "Role": "Full-Stack Developer"
+    },
+    {
+      "Start": "09/2024",
+      "End": "12/2024",
+      "Company": "Educator",
+      "Place": "Zwolle",
+      "Role": "Full-Stack Developer"
+    },
+    {
+      "Start": "02/2022",
+      "End": "08/2022",
+      "Company": "ICT@Work",
+      "Place": "Duiven",
+      "Role": "Full-Stack Developer"
+    },
+    {
+      "Start": "09/2020",
+      "End": "02/2021",
+      "Company": "Highbiza",
+      "Place": "Deventer",
+      "Role": "Developer"
+    }
+  ]
+}
